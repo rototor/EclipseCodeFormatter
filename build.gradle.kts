@@ -70,6 +70,7 @@ intellij {
 changelog {
     groups.empty()
     repositoryUrl = properties("pluginRepositoryUrl")
+    headerParserRegex = "\\d+\\-\\d+\\-\\d+"
 }
 
 

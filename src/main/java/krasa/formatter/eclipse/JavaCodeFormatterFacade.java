@@ -198,7 +198,7 @@ public class JavaCodeFormatterFacade extends CodeFormatterFacade {
 	@NotNull
 	protected LanguageLevel getLanguageLevel(@NotNull PsiFile psiFile) {
 		if (DummyProject.getInstance() == project) {
-			return LanguageLevel.JDK_1_7; // tests hack
+			return LanguageLevel.JDK_21; // tests hack
 		}
 		JavaPsiImplementationHelper instance = JavaPsiImplementationHelper.getInstance(project);
 		LanguageLevel languageLevel = instance.getEffectiveLanguageLevel(psiFile.getVirtualFile());

@@ -7,3 +7,5 @@
 *.zip
 .shelf
 .idea
+idea_lib
+idea_plugins

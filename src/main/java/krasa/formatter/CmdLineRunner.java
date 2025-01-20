@@ -50,6 +50,6 @@ public class CmdLineRunner {
         String formattedSource = formatter.format(javaSource, 0, javaSource.length(), PsiUtilCore.NULL_PSI_FILE);
         if (javaSource.equals(formattedSource))
             return;
-        System.out.println(formattedSource);
+        Files.writeString(file.toPath(), formattedSource);
     }
 }
